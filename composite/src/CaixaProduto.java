@@ -33,6 +33,7 @@ public class CaixaProduto implements ProdutoComponente {
         return total;
     }
 
+    @Override
     public void exibirProduto(){
         System.out.println("Caixa: " + nome + "\n" + "Preço total: " + "\n" + getPreco());
         for (ProdutoComponente item : caixaDeProdutos) {

@@ -12,7 +12,11 @@ public class Main {
         carrinhoPresentes.adicionarItem(garrafinha);
         carrinhoPresentes.adicionarItem(carrinho);
 
+        CaixaProduto novaCaixa = new CaixaProduto("...");
+        novaCaixa.adicionarItem(carrinhoPresentes);
+
         carrinhoPresentes.exibirProduto();
+        novaCaixa.exibirProduto();
         System.out.println("\n Valor total da caixa de presentes: " + carrinhoPresentes.getPreco());
     }
 }

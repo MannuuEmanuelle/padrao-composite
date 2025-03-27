@@ -20,6 +20,7 @@ public class Produto implements ProdutoComponente {
         return preco;
     }
 
+    @Override
     public void exibirProduto(){
         System.out.println("Produto: " + nome + "\n" + "Preço: " + preco + "\n");
     }
